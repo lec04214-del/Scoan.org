@@ -4,7 +4,7 @@ const dashboard = document.getElementById("dashboard");
 
 // Toggle dropdown sidebar
 hamburger.addEventListener("click", (e) => {
-  e.stopPropagation(); // prevent closing immediately
+  e.stopPropagation(); // prevent immediate close
   sidebar.style.display = sidebar.style.display === "flex" ? "none" : "flex";
 });
 
@@ -14,8 +14,7 @@ dashboard.addEventListener("click", () => {
 });
 
 // Close sidebar when clicking a link
-const sidebarLinks = sidebar.querySelectorAll("a");
-sidebarLinks.forEach(link => {
+sidebar.querySelectorAll("a").forEach(link => {
   link.addEventListener("click", () => {
     sidebar.style.display = "none";
   });
