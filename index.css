@@ -44,9 +44,7 @@ html, body {
   transition: color 0.2s;
 }
 
-.navbar a:hover {
-  color: #ffcc00;
-}
+.navbar a:hover { color: #ffcc00; }
 
 /* HAMBURGER (Mobile) */
 .hamburger {
@@ -109,7 +107,6 @@ html, body {
   margin-top: 0;
 }
 
-/* IMAGES & VIDEO RESPONSIVE */
 .card img,
 .card video {
   width: 100%;
@@ -131,9 +128,7 @@ html, body {
   word-wrap: break-word;
 }
 
-.btn:hover {
-  background-color: #0055aa;
-}
+.btn:hover { background-color: #0055aa; }
 
 /* FOOTER */
 .main-footer {
@@ -156,51 +151,23 @@ html, body {
   text-decoration: none;
 }
 
-.social-links a:hover {
-  color: #ffcc00;
-}
+.social-links a:hover { color: #ffcc00; }
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
-  .dashboard {
-    padding: 100px 20px 20px;
-  }
+  .dashboard { padding: 100px 20px 20px; }
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    display: none;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  .sidebar-dropdown {
-    width: 140px;
-  }
-
-  .dashboard {
-    padding: 90px 15px 15px;
-  }
+  .navbar { display: none; }
+  .hamburger { display: flex; }
+  .sidebar-dropdown { width: 140px; }
+  .dashboard { padding: 90px 15px 15px; }
 }
 
 @media (max-width: 480px) {
-  .dashboard {
-    padding: 90px 10px 10px;
-  }
-
-  .sidebar-dropdown {
-    width: 120px;
-    left: 5px;
-  }
-
-  .btn {
-    font-size: 14px;
-    padding: 8px 10px;
-  }
-
-  .card {
-    padding: 15px;
-  }
+  .dashboard { padding: 90px 10px 10px; }
+  .sidebar-dropdown { width: 120px; left: 5px; }
+  .btn { font-size: 14px; padding: 8px 10px; }
+  .card { padding: 15px; }
 }
