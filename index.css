@@ -24,6 +24,7 @@ html, body {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: relative; /* ✅ anchor for dropdown */
 }
 
 .logo img {
@@ -53,7 +54,6 @@ html, body {
   display: none;
   flex-direction: column;
   cursor: pointer;
-  position: relative; /* 🔑 anchor for sidebar */
 }
 
 .hamburger span {
@@ -65,18 +65,18 @@ html, body {
   transition: all 0.3s;
 }
 
-/* DROPDOWN SIDEBAR (Under Hamburger) */
+/* DROPDOWN SIDEBAR (FIXED & STABLE) */
 .sidebar-dropdown {
   display: none;
   position: absolute;
-  top: 100%;          /* directly under hamburger */
-  left: 0;
+  top: 100%;          /* directly under header */
+  right: 15px;        /* aligns under hamburger */
   margin-top: 8px;
   background-color: #003366;
   flex-direction: column;
   width: 160px;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   z-index: 999;
 }
 
@@ -189,6 +189,7 @@ html, body {
 
   .sidebar-dropdown {
     width: 140px;
+    right: 10px;
   }
 
   .btn {
@@ -199,4 +200,4 @@ html, body {
   .card {
     padding: 15px;
   }
-}
+  }
