@@ -93,4 +93,4 @@ function createThumbnails(){
     if(i===0) thumb.classList.add('active');
     thumbsContainer.appendChild(thumb);
   });
-     }
+}
