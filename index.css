@@ -64,13 +64,13 @@ body {
 .sidebar-dropdown {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 30px; /* directly under hamburger */
   right: 0;
-  margin-top: 8px;
   background: #003366;
   width: 180px;
   border-radius: 6px;
   overflow: hidden;
+  z-index: 1001;
 }
 
 .sidebar-dropdown.show {
@@ -235,8 +235,7 @@ body {
   .navbar {
     display: none;
   }
-
   .hamburger {
     display: flex;
   }
-  }
+                }
