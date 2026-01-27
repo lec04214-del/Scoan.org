@@ -8,7 +8,7 @@ if (hamburger && sidebar) {
     const isOpen = sidebar.classList.contains("show");
     if (!isOpen) {
       sidebar.classList.add("show");
-      history.pushState({ sidebarOpen: true }, "");
+      history.pushState({ sidebarOpen: true }, ""); // push state
     } else {
       closeSidebar();
     }
