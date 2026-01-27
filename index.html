@@ -2,138 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Synagogue Church of All Nations Dashboard</title>
+  <title>Synagogue Church of All Nations</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header class="main-header">
-    <div class="logo-section">
-      <img src="images/Scoan.jpg" alt="Church Logo" class="rotating-logo">
-      <p class="header-writeup">SYNAGOGUE CHURCH OF ALL NATION </p>
-    </div>
-
-    <nav class="navbar">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Gallery</a>
-      <a href="#">Media</a>
-      <a href="#">Contact</a>
-    </nav>
-
-    <!-- HAMBURGER -->
-    <div class="hamburger" id="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-      <div class="sidebar-dropdown" id="sidebar">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Gallery</a>
-        <a href="#">Media</a>
-        <a href="#">Contact</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- MAIN -->
-  <main class="dashboard">
-
-    <!-- WELCOME CARD -->
-    <div class="card">
-      <h2>Welcome</h2>
-      <p>Welcome to the official dashboard of the Synagogue Church of All Nations. Explore our gallery and media to witness the power of faith and the ministry of Prophet TB Joshua.</p>
-      <a href="#" class="btn">Learn More</a>
-    </div>
-
-    <!-- IMAGE GALLERY -->
-    <div class="card">
-      <h2>Gallery</h2>
-      <div class="gallery-grid" id="gallery-grid">
-        <div class="gallery-item">
-          <img data-src="images/48562170-af76-11ee-bc2f-cb5579b90709.jpg.webp" alt="" class="lazy">
-          <p class="media-description">Sunday Service Celebration</p>
-        </div>
-        <div class="gallery-item">
-          <img data-src="images/MRS-ADE scoan-1.jpg" alt="" class="lazy">
-          <p class="media-description">Healing Service</p>
-        </div>
-        <div class="gallery-item">
-          <img data-src="images/Prophet_tb_joshua_20_05_18-1024x697.webp" alt="" class="lazy">
-          <p class="media-description">Prophet TB Joshua Preaching</p>
-        </div>
-        <div class="gallery-item">
-          <img data-src="images/SCOAN4.gif" alt="" class="lazy">
-          <p class="media-description">Congregation Worship</p>
-        </div>
-        <div class="gallery-item">
-          <img data-src="images/Scoan.jpg" alt="" class="lazy">
-          <p class="media-description">SCOAN Exterior</p>
-        </div>
-        <div class="gallery-item">
-          <img data-src="images/TB-joshua-e1622984198616.jpg" alt="" class="lazy">
-          <p class="media-description">Prophet TB Joshua Portrait</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- VIDEO GALLERY -->
-    <div class="card">
-      <h2>Video Gallery</h2>
-      <div class="video-grid" id="video-grid">
-        <div class="video-item">
-          <div class="video-placeholder" data-src="videos/tbj p.mp4" data-poster="images/scoan ff.jpg"></div>
-          <p class="media-description">TBJ Service Highlights</p>
-        </div>
-        <div class="video-item">
-          <div class="video-placeholder" data-src="videos/vdfr_52.mp4" data-poster="images/scoan service.jpg"></div>
-          <p class="media-description">Healing Service</p>
-        </div>
-        <div class="video-item">
-          <div class="video-placeholder" data-src="videos/vdfr_64.mp4" data-poster="images/scoan service.jpg"></div>
-          <p class="media-description">Prophetic Session</p>
-        </div>
-        <div class="video-item">
-          <div class="video-placeholder" data-src="videos/vdfr_847.mp4" data-poster="images/scoan service.jpg"></div>
-          <p class="media-description">Prayer Session</p>
-        </div>
-        <div class="video-item">
-          <div class="video-placeholder" data-src="videos/vdfr_952.mp4" data-poster="images/scoan service.jpg"></div>
-          <p class="media-description">Healing & Deliverance</p>
-        </div>
-        <div class="video-item">
-          <div class="youtube-placeholder" data-src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"></div>
-          <p class="media-description">Live Stream Channel</p>
-        </div>
-      </div>
-    </div>
-
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <p>© 2026 Synagogue Church of All Nations</p>
-    <div class="social-links">
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">TikTok</a>
-    </div>
-  </footer>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox" class="lightbox">
-    <span class="lightbox-close">&times;</span>
-    <div class="lightbox-content">
-      <img class="lightbox-img" src="" alt="">
-      <video class="lightbox-video" controls></video>
-    </div>
-    <a class="lightbox-prev">&#10094;</a>
-    <a class="lightbox-next">&#10095;</a>
-    <div class="lightbox-thumbnails" id="lightbox-thumbs"></div>
+<!-- HEADER -->
+<header class="main-header">
+  <div class="logo-section">
+    <img src="images/Scoan.jpg" class="rotating-logo" alt="Logo">
+    <p class="header-writeup">SYNAGOGUE CHURCH OF ALL NATIONS</p>
   </div>
 
-  <script src="script.js"></script>
+  <nav class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Media</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="sidebar-dropdown" id="sidebar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Gallery</a>
+    <a href="#">Media</a>
+    <a href="#">Contact</a>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="dashboard">
+
+  <div class="card">
+    <h2>Welcome</h2>
+    <p>Welcome to the official dashboard of the Synagogue Church of All Nations.</p>
+  </div>
+
+  <!-- MIXED MEDIA -->
+  <div class="card">
+    <h2>Gallery & Media</h2>
+
+    <div class="gallery-grid mixed-media">
+
+      <!-- IMAGE -->
+      <div class="gallery-item">
+        <img class="lazy" src="images/placeholder.png" data-src="images/Scoan.jpg" alt="">
+        <p class="media-description">SCOAN Exterior</p>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="gallery-item video-box"
+           data-video="videos/tbj p.mp4">
+        <img src="images/scoan ff.jpg" alt="">
+        <span class="play-icon">▶</span>
+        <p class="media-description">TB Joshua Service</p>
+      </div>
+
+      <!-- IMAGE -->
+      <div class="gallery-item">
+        <img class="lazy" src="images/placeholder.png" data-src="images/TB-joshua-e1622984198616.jpg" alt="">
+        <p class="media-description">Prophet TB Joshua</p>
+      </div>
+
+      <!-- VIDEO -->
+      <div class="gallery-item video-box"
+           data-video="videos/vdfr_52.mp4">
+        <img src="images/scoan service.jpg" alt="">
+        <span class="play-icon">▶</span>
+        <p class="media-description">Healing Service</p>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-img">
+  <video class="lightbox-video" controls playsinline></video>
+</div>
+
+<script src="script.js"></script>
 </body>
-            </html>
+</html>
