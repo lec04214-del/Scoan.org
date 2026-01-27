@@ -10,8 +10,9 @@
 
   <!-- HEADER -->
   <header class="main-header">
-    <div class="logo">
-      <img src="images/Scoan.jpg" alt="Church Logo">
+    <div class="logo-section">
+      <img src="images/Scoan.jpg" alt="Church Logo" class="rotating-logo">
+      <p class="header-writeup">Faith, Hope, and Healing through Christ</p>
     </div>
 
     <nav class="navbar">
@@ -43,57 +44,33 @@
     <!-- WELCOME CARD -->
     <div class="card">
       <h2>Welcome</h2>
-      <p>Welcome to the official dashboard of the Synagogue Church of All Nations.</p>
+      <p>Welcome to the official dashboard of the Synagogue Church of All Nations. Explore our gallery and media to witness the power of faith and the ministry of Prophet TB Joshua.</p>
       <a href="#" class="btn">Learn More</a>
     </div>
 
     <!-- IMAGE GALLERY -->
     <div class="card">
       <h2>Gallery</h2>
-      <div class="gallery-grid">
-        <img src="images/48562170-af76-11ee-bc2f-cb5579b90709.jpg.webp" alt="" loading="lazy">
-        <img src="images/MRS-ADE scoan-1.jpg" alt="" loading="lazy">
-        <img src="images/Prophet_tb_joshua_20_05_18-1024x697.webp" alt="" loading="lazy">
-        <img src="images/SCOAN4.gif" alt="" loading="lazy">
-        <img src="images/Scoan.jpg" alt="" loading="lazy">
-        <img src="images/TB-joshua-e1622984198616.jpg" alt="" loading="lazy">
-        <img src="images/artworks-RvAi9wJR9ueefzkR-xIokHA-t500x500 (1).jpg" alt="" loading="lazy">
-        <img src="images/avatars-000516693333-ljq1og-t1080x1080.jpg" alt="" loading="lazy">
-        <img src="images/front-portrait-scaled.jpg" alt="" loading="lazy">
-        <img src="images/healing scoan 15.jpg" alt="" loading="lazy">
-        <img src="images/img-20160708-151222-largejpg.jpg" alt="" loading="lazy">
-        <img src="images/kkkkkkkkkkkkkkkkkkkk.png" alt="" loading="lazy">
-        <img src="images/pastor 12.jpg" alt="" loading="lazy">
-        <img src="images/scoan logo 1.jpg" alt="" loading="lazy">
-        <img src="images/scoan service.jpg" alt="" loading="lazy">
-        <img src="images/scoan-attends-.jpg" alt="" loading="lazy">
-        <img src="images/set-free-by-TB-Joshua-e.jpg" alt="" loading="lazy">
-        <img src="images/the-scoan.png" alt="" loading="lazy">
+      <div class="gallery-grid" id="gallery-grid">
+        <img data-src="images/48562170-af76-11ee-bc2f-cb5579b90709.jpg.webp" alt="" loading="lazy" class="lazy">
+        <img data-src="images/MRS-ADE scoan-1.jpg" alt="" loading="lazy" class="lazy">
+        <img data-src="images/Prophet_tb_joshua_20_05_18-1024x697.webp" alt="" loading="lazy" class="lazy">
+        <img data-src="images/SCOAN4.gif" alt="" loading="lazy" class="lazy">
+        <img data-src="images/Scoan.jpg" alt="" loading="lazy" class="lazy">
+        <img data-src="images/TB-joshua-e1622984198616.jpg" alt="" loading="lazy" class="lazy">
       </div>
     </div>
 
     <!-- VIDEO GALLERY -->
     <div class="card">
       <h2>Video Gallery</h2>
-      <div class="video-grid">
-        <video controls preload="none" poster="images/scoan ff.jpg">
-          <source src="videos/tbj p.mp4" type="video/mp4">
-        </video>
-        <video controls preload="none" poster="images/scoan service.jpg">
-          <source src="videos/vdfr_52.mp4" type="video/mp4">
-        </video>
-        <video controls preload="none" poster="images/scoan service.jpg">
-          <source src="videos/vdfr_64.mp4" type="video/mp4">
-        </video>
-        <video controls preload="none" poster="images/scoan service.jpg">
-          <source src="videos/vdfr_847.mp4" type="video/mp4">
-        </video>
-        <video controls preload="none" poster="images/scoan service.jpg">
-          <source src="videos/vdfr_952.mp4" type="video/mp4">
-        </video>
-        <div class="youtube-video">
-          <iframe width="100%" height="200" src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
+      <div class="video-grid" id="video-grid">
+        <div class="video-placeholder" data-src="videos/tbj p.mp4" data-poster="images/scoan ff.jpg"></div>
+        <div class="video-placeholder" data-src="videos/vdfr_52.mp4" data-poster="images/scoan service.jpg"></div>
+        <div class="video-placeholder" data-src="videos/vdfr_64.mp4" data-poster="images/scoan service.jpg"></div>
+        <div class="video-placeholder" data-src="videos/vdfr_847.mp4" data-poster="images/scoan service.jpg"></div>
+        <div class="video-placeholder" data-src="videos/vdfr_952.mp4" data-poster="images/scoan service.jpg"></div>
+        <div class="youtube-placeholder" data-src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"></div>
       </div>
     </div>
 
