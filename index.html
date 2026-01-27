@@ -52,12 +52,30 @@
     <div class="card">
       <h2>Gallery</h2>
       <div class="gallery-grid" id="gallery-grid">
-        <img data-src="images/48562170-af76-11ee-bc2f-cb5579b90709.jpg.webp" alt="" loading="lazy" class="lazy">
-        <img data-src="images/MRS-ADE scoan-1.jpg" alt="" loading="lazy" class="lazy">
-        <img data-src="images/Prophet_tb_joshua_20_05_18-1024x697.webp" alt="" loading="lazy" class="lazy">
-        <img data-src="images/SCOAN4.gif" alt="" loading="lazy" class="lazy">
-        <img data-src="images/Scoan.jpg" alt="" loading="lazy" class="lazy">
-        <img data-src="images/TB-joshua-e1622984198616.jpg" alt="" loading="lazy" class="lazy">
+        <div class="gallery-item">
+          <img data-src="images/48562170-af76-11ee-bc2f-cb5579b90709.jpg.webp" alt="" class="lazy">
+          <p class="media-description">Sunday Service Celebration</p>
+        </div>
+        <div class="gallery-item">
+          <img data-src="images/MRS-ADE scoan-1.jpg" alt="" class="lazy">
+          <p class="media-description">Healing Service</p>
+        </div>
+        <div class="gallery-item">
+          <img data-src="images/Prophet_tb_joshua_20_05_18-1024x697.webp" alt="" class="lazy">
+          <p class="media-description">Prophet TB Joshua Preaching</p>
+        </div>
+        <div class="gallery-item">
+          <img data-src="images/SCOAN4.gif" alt="" class="lazy">
+          <p class="media-description">Congregation Worship</p>
+        </div>
+        <div class="gallery-item">
+          <img data-src="images/Scoan.jpg" alt="" class="lazy">
+          <p class="media-description">SCOAN Exterior</p>
+        </div>
+        <div class="gallery-item">
+          <img data-src="images/TB-joshua-e1622984198616.jpg" alt="" class="lazy">
+          <p class="media-description">Prophet TB Joshua Portrait</p>
+        </div>
       </div>
     </div>
 
@@ -65,12 +83,30 @@
     <div class="card">
       <h2>Video Gallery</h2>
       <div class="video-grid" id="video-grid">
-        <div class="video-placeholder" data-src="videos/tbj p.mp4" data-poster="images/scoan ff.jpg"></div>
-        <div class="video-placeholder" data-src="videos/vdfr_52.mp4" data-poster="images/scoan service.jpg"></div>
-        <div class="video-placeholder" data-src="videos/vdfr_64.mp4" data-poster="images/scoan service.jpg"></div>
-        <div class="video-placeholder" data-src="videos/vdfr_847.mp4" data-poster="images/scoan service.jpg"></div>
-        <div class="video-placeholder" data-src="videos/vdfr_952.mp4" data-poster="images/scoan service.jpg"></div>
-        <div class="youtube-placeholder" data-src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"></div>
+        <div class="video-item">
+          <div class="video-placeholder" data-src="videos/tbj p.mp4" data-poster="images/scoan ff.jpg"></div>
+          <p class="media-description">TBJ Service Highlights</p>
+        </div>
+        <div class="video-item">
+          <div class="video-placeholder" data-src="videos/vdfr_52.mp4" data-poster="images/scoan service.jpg"></div>
+          <p class="media-description">Healing Service</p>
+        </div>
+        <div class="video-item">
+          <div class="video-placeholder" data-src="videos/vdfr_64.mp4" data-poster="images/scoan service.jpg"></div>
+          <p class="media-description">Prophetic Session</p>
+        </div>
+        <div class="video-item">
+          <div class="video-placeholder" data-src="videos/vdfr_847.mp4" data-poster="images/scoan service.jpg"></div>
+          <p class="media-description">Prayer Session</p>
+        </div>
+        <div class="video-item">
+          <div class="video-placeholder" data-src="videos/vdfr_952.mp4" data-poster="images/scoan service.jpg"></div>
+          <p class="media-description">Healing & Deliverance</p>
+        </div>
+        <div class="video-item">
+          <div class="youtube-placeholder" data-src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID"></div>
+          <p class="media-description">Live Stream Channel</p>
+        </div>
       </div>
     </div>
 
@@ -89,10 +125,13 @@
   <!-- LIGHTBOX -->
   <div id="lightbox" class="lightbox">
     <span class="lightbox-close">&times;</span>
-    <img class="lightbox-img" src="" alt="">
-    <video class="lightbox-video" controls></video>
+    <div class="lightbox-content">
+      <img class="lightbox-img" src="" alt="">
+      <video class="lightbox-video" controls></video>
+    </div>
     <a class="lightbox-prev">&#10094;</a>
     <a class="lightbox-next">&#10095;</a>
+    <div class="lightbox-thumbnails" id="lightbox-thumbs"></div>
   </div>
 
   <script src="script.js"></script>
