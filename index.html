@@ -1,86 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dashboard | Synagogue Church of All Nations</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="index.css" />
+  <meta charset="UTF-8">
+  <title>Synagogue Church of All Nations Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- HEADER -->
   <header class="main-header">
-
     <div class="logo">
-      <img src="Image/scoan ff.jpg" alt="SCOAN Logo">
+      <img src="images/scoan ff.jpg" alt="Church Logo">
     </div>
 
-    <!-- Hamburger -->
+    <nav class="navbar">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Media</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <!-- HAMBURGER -->
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
       <span></span>
 
       <div class="sidebar-dropdown" id="sidebar">
-        <a href="#">Dashboard</a>
-        <a href="#">For Prayers</a>
-        <a href="#">Donation</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
         <a href="#">Gallery</a>
         <a href="#">Media</a>
-        <a href="#">Tithes & Offering</a>
         <a href="#">Contact</a>
       </div>
     </div>
-
-    <!-- Desktop Navbar -->
-    <nav class="navbar">
-      <a href="#">Home</a>
-      <a href="#">Donation</a>
-      <a href="#">Gallery</a>
-      <a href="#">Media</a>
-      <a href="#">Tithes & Offering</a>
-      <a href="#">Contact</a>
-    </nav>
-
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- MAIN -->
   <main class="dashboard">
 
-    <section class="card">
+    <!-- WELCOME CARD -->
+    <div class="card">
       <h2>Welcome</h2>
       <p>Welcome to the official dashboard of the Synagogue Church of All Nations.</p>
-    </section>
+      <a href="#" class="btn">Learn More</a>
+    </div>
 
-    <!-- GALLERY -->
-    <section class="card">
-      <h2>Church Gallery</h2>
-
+    <!-- IMAGE GALLERY -->
+    <div class="card">
+      <h2>Gallery</h2>
       <div class="gallery-grid">
-        <img src="Image/MRS-ADE scoan-1.jpg">
-        <img src="Image/Prophet_tb_joshua_20_05_18-1024x697.webp">
-        <img src="Image/SCOAN4.gif">
-        <img src="Image/Scoan.jpg">
-        <img src="Image/TB-joshua-e1622984198616.jpg">
-        <img src="Image/artworks-RvAi9wJR9ueefzkR-xIokHA-t500x500 (1).jpg">
-        <img src="Image/avatars-000516693333-ljq1og-t1080x1080.jpg">
-        <img src="Image/front-portrait-scaled.jpg">
-        <img src="Image/healing scoan 15.jpg">
-        <img src="Image/img-20160708-151222-largejpg.jpg">
-        <img src="Image/kkkkkkkkkkkkkkkkkkkk.png">
-        <img src="Image/pastor 12.jpg">
-        <img src="Image/scoan logo 1.jpg">
-        <img src="Image/scoan service.jpg">
-        <img src="Image/scoan-attends-.jpg">
-        <img src="Image/set-free-by-TB-Joshua-e.jpg">
-        <img src="Image/the-scoan.png">
+        <img src="images/48562170-af76-11ee-bc2f-cb5579b90709.jpg.webp" alt="" loading="lazy">
+        <img src="images/MRS-ADE scoan-1.jpg" alt="" loading="lazy">
+        <img src="images/Prophet_tb_joshua_20_05_18-1024x697.webp" alt="" loading="lazy">
+        <img src="images/SCOAN4.gif" alt="" loading="lazy">
+        <img src="images/Scoan.jpg" alt="" loading="lazy">
+        <img src="images/TB-joshua-e1622984198616.jpg" alt="" loading="lazy">
+        <img src="images/artworks-RvAi9wJR9ueefzkR-xIokHA-t500x500 (1).jpg" alt="" loading="lazy">
+        <img src="images/avatars-000516693333-ljq1og-t1080x1080.jpg" alt="" loading="lazy">
+        <img src="images/front-portrait-scaled.jpg" alt="" loading="lazy">
+        <img src="images/healing scoan 15.jpg" alt="" loading="lazy">
+        <img src="images/img-20160708-151222-largejpg.jpg" alt="" loading="lazy">
+        <img src="images/kkkkkkkkkkkkkkkkkkkk.png" alt="" loading="lazy">
+        <img src="images/pastor 12.jpg" alt="" loading="lazy">
+        <img src="images/scoan logo 1.jpg" alt="" loading="lazy">
+        <img src="images/scoan service.jpg" alt="" loading="lazy">
+        <img src="images/scoan-attends-.jpg" alt="" loading="lazy">
+        <img src="images/set-free-by-TB-Joshua-e.jpg" alt="" loading="lazy">
+        <img src="images/the-scoan.png" alt="" loading="lazy">
       </div>
-    </section>
+    </div>
 
-    <section class="card">
-      <h2>Watch on YouTube</h2>
-      <a class="btn" href="https://www.youtube.com" target="_blank">Watch Sermons</a>
-    </section>
+    <!-- VIDEO GALLERY -->
+    <div class="card">
+      <h2>Video Gallery</h2>
+      <div class="video-grid">
+        <video controls preload="none" poster="images/scoan ff.jpg">
+          <source src="videos/service1.mp4" type="video/mp4">
+        </video>
+        <video controls preload="none" poster="images/scoan service.jpg">
+          <source src="videos/service2.mp4" type="video/mp4">
+        </video>
+        <div class="youtube-video">
+          <iframe width="100%" height="200" src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
 
   </main>
 
@@ -94,6 +101,15 @@
     </div>
   </footer>
 
-  <script src="index.js"></script>
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-img" src="" alt="">
+    <video class="lightbox-video" controls style="display:none;"></video>
+    <a class="lightbox-prev">&#10094;</a>
+    <a class="lightbox-next">&#10095;</a>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
