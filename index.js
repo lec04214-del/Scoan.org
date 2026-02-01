@@ -1,61 +1,48 @@
-// SIDEBAR
 const hamburger = document.getElementById("hamburger");
 const sidebar = document.getElementById("sidebar");
 
-hamburger.addEventListener("click", e => {
+hamburger.addEventListener("click", (e) => {
   e.stopPropagation();
   sidebar.classList.toggle("show");
+  history.pushState({ sidebar: true }, "");
 });
 
-document.addEventListener("click", e => {
-  if (!sidebar.contains(e.target) && !hamburger.contains(e.target)) {
-    sidebar.classList.remove("show");
-  }
+window.addEventListener("popstate", () => {
+  sidebar.classList.remove("show");
 });
 
-// LAZY LOAD IMAGES
-document.addEventListener("DOMContentLoaded", () => {
-  const lazyImgs = document.querySelectorAll(".lazy");
-
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.src = entry.target.dataset.src;
-        observer.unobserve(entry.target);
-      }
-    });
-  });
-
-  lazyImgs.forEach(img => observer.observe(img));
+document.addEventListener("click", () => {
+  sidebar.classList.remove("show");
 });
 
-// LIGHTBOX
+/* LIGHTBOX */
+const images = document.querySelectorAll(".gallery-grid img");
+const videos = document.querySelectorAll(".video-grid video");
+
 const lightbox = document.getElementById("lightbox");
-const lbImg = document.querySelector(".lightbox-img");
-const lbVid = document.querySelector(".lightbox-video");
+const lightboxImg = document.querySelector(".lightbox-img");
+const lightboxVideo = document.querySelector(".lightbox-video");
 
-document.querySelectorAll(".gallery-item img").forEach(img => {
-  img.addEventListener("click", () => {
-    lbVid.pause();
-    lbVid.style.display = "none";
-    lbImg.style.display = "block";
-    lbImg.src = img.src;
+images.forEach(img => {
+  img.onclick = () => {
     lightbox.style.display = "flex";
-  });
+    lightboxImg.src = img.src;
+    lightboxImg.style.display = "block";
+    lightboxVideo.style.display = "none";
+  };
 });
 
-document.querySelectorAll(".video-box").forEach(box => {
-  box.addEventListener("click", () => {
-    lbImg.style.display = "none";
-    lbVid.style.display = "block";
-    lbVid.src = box.dataset.video;
-    lbVid.play();
+videos.forEach(video => {
+  video.onclick = () => {
     lightbox.style.display = "flex";
-  });
+    lightboxVideo.src = video.querySelector("source").src;
+    lightboxVideo.style.display = "block";
+    lightboxVideo.play();
+    lightboxImg.style.display = "none";
+  };
 });
 
-document.querySelector(".lightbox-close").addEventListener("click", () => {
+document.querySelector(".lightbox-close").onclick = () => {
   lightbox.style.display = "none";
-  lbVid.pause();
-  lbVid.src = "";
-});
+  lightboxVideo.pause();
+};
